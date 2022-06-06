@@ -1,4 +1,8 @@
+import json
+
 import sqlite3
+
+JSON_DATA_DIR_PATH = "company_json_data"
 
 
 def create_company_list_db(cursor):
@@ -32,6 +36,12 @@ def ensure_database_is_initialized():
 
     connection.commit()
     connection.close()
+
+
+def store_full_dataset_as_json(stock_ticker: str, data: dict):
+    file_path = "{}/{}.json".format(JSON_DATA_DIR_PATH, stock_ticker.replace(':', '_'))
+    with open(file_path, 'w') as file:
+        file.write(json.dumps(data))
 
 
 def store_supported_stocks(supported_stocks):
