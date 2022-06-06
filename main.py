@@ -29,7 +29,7 @@ def main():
     store_supported_stocks(supported_companies)
 
     if can_get_full_dataset():
-        stock_ticker = 'AAPL:US'
+        stock_ticker = 'GOOG:US'
         full_dataset = get_full_dataset(stock_ticker)
         store_full_dataset_as_json(stock_ticker, full_dataset)
 
