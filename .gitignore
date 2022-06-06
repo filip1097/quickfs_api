@@ -3,3 +3,6 @@ API_KEY
 
 # IntelliJ
 .idea/*
+
+# Log
+quickfs_api.log
