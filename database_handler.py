@@ -47,7 +47,7 @@ def get_json_file_name(stock_ticker: str):
 def store_full_dataset_as_json(stock_ticker: str, data: dict):
     file_path = f"{JSON_DATA_DIR_PATH}/{get_json_file_name(stock_ticker)}"
     with open(file_path, 'w') as file:
-        file.write(json.dumps(data))
+        file.write(json.dumps(data, indent=2))
 
 
 def store_supported_stocks(supported_stocks):
