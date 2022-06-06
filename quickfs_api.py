@@ -46,18 +46,18 @@ def get_all_supported_companies() -> list:
 
 
 def get_list_of_supported_companies(country: str, exchange: str) -> list:
-    logging.info("Get list of supported companies, country code: {}, exchange: {}".format(country, exchange))
-    url = "{}/companies/{}/{}".format(API_URL_BASE, country, exchange)
+    logging.info(f"Get list of supported companies, country code: {country}, exchange: {exchange}")
+    url = f"{API_URL_BASE}/companies/{country}/{exchange}"
     return requests.get(url, headers=gen_header()).json()['data']
 
 
 def get_full_dataset(company_ticker: str) -> dict:
-    logging.info("Get full dataset for {}.".format(company_ticker))
-    url = "{}/data/all-data/{}".format(API_URL_BASE, company_ticker)
+    logging.info(f"Get full dataset for {company_ticker}")
+    url = f"{API_URL_BASE}/data/all-data/{company_ticker}"
     return requests.get(url, headers=gen_header()).json()
 
 
 def get_remaining_api_quota() -> int:
     logging.info("Get remaining API quota.")
-    url = "{}/usage".format(API_URL_BASE)
+    url = f"{API_URL_BASE}/usage"
     return requests.get(url, headers=gen_header()).json()['usage']['quota']['remaining']

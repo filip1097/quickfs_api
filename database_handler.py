@@ -38,8 +38,14 @@ def ensure_database_is_initialized():
     connection.close()
 
 
+def get_json_file_name(stock_ticker: str):
+    # ':' is not allowed in file names
+    stock_ticker_without_colon = stock_ticker.replace(':', '_')
+    return f"{stock_ticker_without_colon}.json"
+
+
 def store_full_dataset_as_json(stock_ticker: str, data: dict):
-    file_path = "{}/{}.json".format(JSON_DATA_DIR_PATH, stock_ticker.replace(':', '_'))
+    file_path = f"{JSON_DATA_DIR_PATH}/{get_json_file_name(stock_ticker)}"
     with open(file_path, 'w') as file:
         file.write(json.dumps(data))
 
@@ -49,12 +55,12 @@ def store_supported_stocks(supported_stocks):
     cursor = connection.cursor()
 
     for stock_ticker in supported_stocks:
-        select_command = "SELECT company_ticker FROM company_list WHERE company_ticker = \"{}\"".format(stock_ticker)
+        select_command = f"SELECT company_ticker FROM company_list WHERE company_ticker = \"{stock_ticker}\""
         cursor.execute(select_command)
         select_result = cursor.fetchall()
 
         if len(select_result) == 0:
-            insert_command = "INSERT INTO company_list (company_ticker) VALUES (\"{}\");".format(stock_ticker)
+            insert_command = f"INSERT INTO company_list (company_ticker) VALUES (\"{stock_ticker}\");"
             cursor.execute(insert_command)
 
     connection.commit()
