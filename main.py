@@ -3,6 +3,8 @@ from database_handler import store_full_dataset_as_json
 from database_handler import store_supported_stocks
 from database_handler import update_company_list_db
 
+import dataset_util as ds
+
 from datetime import date
 
 import logging
@@ -34,7 +36,7 @@ def main():
         store_full_dataset_as_json(stock_ticker, full_dataset)
 
         current_date = date.today().strftime("%Y-%m-%d")
-        latest_fiscal_year_date = gen_latest_fiscal_year_string(full_dataset)
+        latest_fiscal_year_date = ds.get_latest_fiscal_year_string(full_dataset)
         update_company_list_db(stock_ticker, current_date, latest_fiscal_year_date)
 
     else:
