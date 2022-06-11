@@ -1,4 +1,7 @@
+from analyzer import evaluate_company_soundness
+
 from database_handler import ensure_database_is_initialized
+from database_handler import get_company_row
 from database_handler import store_full_dataset_as_json
 from database_handler import store_supported_stocks
 from database_handler import update_company_list_db
@@ -31,13 +34,14 @@ def main():
     store_supported_stocks(supported_companies)
 
     if can_get_full_dataset():
-        stock_ticker = 'GOOG:US'
+        stock_ticker = 'AAPL:US'
         full_dataset = get_full_dataset(stock_ticker)
         store_full_dataset_as_json(stock_ticker, full_dataset)
 
         current_date = date.today().strftime("%Y-%m-%d")
         latest_fiscal_year_date = ds.get_latest_fiscal_year_string(full_dataset)
-        update_company_list_db(stock_ticker, current_date, latest_fiscal_year_date)
+        company_soudness = evaluate_company_soundness(full_dataset)
+        update_company_list_db(stock_ticker, current_date, latest_fiscal_year_date, company_soudness)
 
     else:
         logging.info("QuickFS API Quota too low.")

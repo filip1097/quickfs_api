@@ -81,20 +81,21 @@ def store_supported_stocks(supported_stocks):
     connection.close()
 
 
-def update_company_list_db(stock_ticker, last_api_get, latest_fiscal_year):
+def update_company_list_db(stock_ticker, last_api_get, latest_fiscal_year, company_soundness):
     connection = sqlite3.connect("quickfs_api.db")
     cursor = connection.cursor()
 
     select_command = f"SELECT * FROM company_list WHERE company_ticker = \"{stock_ticker}\""
     cursor.execute(select_command)
     company_row = cursor.fetchall()[0]
-    company_ticker_in_db, last_api_get_in_db, latest_fiscal_year_in_db, soundness_score = company_row
+    company_ticker_in_db, last_api_get_in_db, latest_fiscal_year_in_db, soundness_in_db = company_row
 
     if stock_ticker != company_ticker_in_db or\
             last_api_get_in_db != last_api_get or\
-            latest_fiscal_year_in_db != latest_fiscal_year:
-        replace_command = f"REPLACE INTO company_list (company_ticker, last_api_get, latest_fiscal_year)" \
-                          f"VALUES (\"{stock_ticker}\", \'{last_api_get}\', \'{latest_fiscal_year}\');"
+            latest_fiscal_year_in_db != latest_fiscal_year or\
+            soundness_in_db != company_soundness:
+        replace_command = f"REPLACE INTO company_list VALUES " \
+                          f"(\"{stock_ticker}\", \'{last_api_get}\', \'{latest_fiscal_year}\', {company_soundness});"
         cursor.execute(replace_command)
 
     connection.commit()
