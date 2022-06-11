@@ -1,3 +1,6 @@
+import datetime
+from datetime import date
+
 import json
 
 import sqlite3
@@ -36,6 +39,32 @@ def ensure_database_is_initialized():
 
     connection.commit()
     connection.close()
+
+
+def get_best_company_to_request():
+    connection = sqlite3.connect("quickfs_api.db")
+    cursor = connection.cursor()
+
+    current_date = date.today().strftime("%Y-%m-%d")
+    thirty_days_ago = (date.today() - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
+    current_year = int(date.today().strftime("%Y"))
+    latest_expected_fiscal_year = f"{current_year-1}-01-01"
+
+    select_command = "SELECT * FROM company_list " \
+                     f"WHERE last_api_get NOT BETWEEN \'{thirty_days_ago}\' AND \'{current_date}\' "\
+                     f"AND latest_fiscal_year NOT BETWEEN \'{latest_expected_fiscal_year}\'" \
+                     f"AND \'{latest_expected_fiscal_year}\' "\
+                     "ORDER BY soundness_scrore DESC;"
+    cursor.execute(select_command)
+    company_rows = cursor.fetchall()
+
+    connection.commit()
+    connection.close()
+
+    if len(company_rows) == 0:
+        return None
+    else:
+        return company_rows[0]
 
 
 def get_company_row(stock_ticker: str):
