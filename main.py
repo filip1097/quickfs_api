@@ -1,6 +1,7 @@
 from analyzer import evaluate_company_soundness
 
 from database_handler import ensure_database_is_initialized
+from database_handler import get_best_stock_ticker_to_request
 from database_handler import get_company_row
 from database_handler import store_full_dataset_as_json
 from database_handler import store_supported_stocks
@@ -17,11 +18,6 @@ from quickfs_api import get_all_supported_companies
 from quickfs_api import get_full_dataset
 
 
-def gen_latest_fiscal_year_string(full_dataset: dict) -> str:
-    latest_fiscal_year = full_dataset['data']['financials']['annual']['fiscal_year_number'][-1]
-    return f"{latest_fiscal_year}-01-01"
-
-
 def main():
     logging.basicConfig(filename='quickfs_api.log',
                         filemode='w',
@@ -33,8 +29,9 @@ def main():
     supported_companies = get_all_supported_companies()
     store_supported_stocks(supported_companies)
 
-    if can_get_full_dataset():
-        stock_ticker = 'AAPL:US'
+    while can_get_full_dataset():
+        stock_ticker = get_best_stock_ticker_to_request()
+
         full_dataset = get_full_dataset(stock_ticker)
         store_full_dataset_as_json(stock_ticker, full_dataset)
 

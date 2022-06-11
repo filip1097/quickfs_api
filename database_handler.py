@@ -41,7 +41,7 @@ def ensure_database_is_initialized():
     connection.close()
 
 
-def get_best_company_to_request():
+def get_best_stock_ticker_to_request():
     connection = sqlite3.connect("quickfs_api.db")
     cursor = connection.cursor()
 
@@ -52,19 +52,20 @@ def get_best_company_to_request():
 
     select_command = "SELECT * FROM company_list " \
                      f"WHERE last_api_get NOT BETWEEN \'{thirty_days_ago}\' AND \'{current_date}\' "\
-                     f"AND latest_fiscal_year NOT BETWEEN \'{latest_expected_fiscal_year}\'" \
-                     f"AND \'{latest_expected_fiscal_year}\' "\
+                     f"AND latest_fiscal_year != \'{latest_expected_fiscal_year}\'" \
                      "ORDER BY soundness_scrore DESC;"
     cursor.execute(select_command)
     company_rows = cursor.fetchall()
 
+    if len(company_rows) == 0:
+        select_command = "SELECT * FROM company_list WHERE last_api_get IS NULL;"
+        cursor.execute(select_command)
+        company_rows = cursor.fetchall()
+
     connection.commit()
     connection.close()
 
-    if len(company_rows) == 0:
-        return None
-    else:
-        return company_rows[0]
+    return company_rows[0][0]
 
 
 def get_company_row(stock_ticker: str):
