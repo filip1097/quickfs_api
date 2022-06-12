@@ -1,6 +1,10 @@
 import datetime
 from datetime import date
 
+from os import listdir
+from os.path import isfile
+from os.path import join
+
 import json
 
 import sqlite3
@@ -80,6 +84,18 @@ def get_company_row(stock_ticker: str):
     connection.close()
 
     return company_row
+
+
+def get_companies_with_available_json_data() -> list:
+    files = [f for f in listdir(JSON_DATA_DIR_PATH) if isfile(join(JSON_DATA_DIR_PATH, f))]
+    companies = [f.rsplit('.', 1)[0].replace('_', ':') for f in files]
+    return companies
+
+
+def get_dataset_from_json(stock_ticker: str) -> dict:
+    file_path = f"{JSON_DATA_DIR_PATH}/{get_json_file_name(stock_ticker)}"
+    with open(file_path) as file:
+        return json.load(file)
 
 
 def get_json_file_name(stock_ticker: str):

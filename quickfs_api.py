@@ -1,4 +1,5 @@
 import logging
+
 import requests
 
 API_URL_BASE = "https://public-api.quickfs.net/v1"
@@ -51,7 +52,7 @@ def get_list_of_supported_companies(country: str, exchange: str) -> list:
     return requests.get(url, headers=gen_header()).json()['data']
 
 
-def get_full_dataset(company_ticker: str) -> dict:
+def get_full_dataset_from_api(company_ticker: str) -> dict:
     logging.info(f"Get full dataset for {company_ticker}")
     url = f"{API_URL_BASE}/data/all-data/{company_ticker}"
     return requests.get(url, headers=gen_header()).json()
