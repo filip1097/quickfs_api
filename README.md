@@ -1,10 +1,11 @@
-# QuickFS
+# QuickFS API
 
-My project that get financial data using the QuickFS API and then does analysis on the data.
+A project that utilizes the QuickFS API to request financial data and do analysis on it.
 
 ## TODO
 
-* Determine best company to get from api
 * Deal with bad response codes
 * Check dates in SQL. Do they have to be YYYY-MM-DD format?
 * Add tests for soundness calculation
+* Re-calculate soundess of already gotten companies
+* Fix 'Data is not present in dataset-01-01' in Database

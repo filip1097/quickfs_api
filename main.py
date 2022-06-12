@@ -31,6 +31,7 @@ def main():
 
     while can_get_full_dataset():
         stock_ticker = get_best_stock_ticker_to_request()
+        print(get_company_row(stock_ticker))
 
         full_dataset = get_full_dataset(stock_ticker)
         store_full_dataset_as_json(stock_ticker, full_dataset)
@@ -39,6 +40,7 @@ def main():
         latest_fiscal_year_date = ds.get_latest_fiscal_year_string(full_dataset)
         company_soudness = evaluate_company_soundness(full_dataset)
         update_company_list_db(stock_ticker, current_date, latest_fiscal_year_date, company_soudness)
+        print(get_company_row(stock_ticker))
 
     else:
         logging.info("QuickFS API Quota too low.")

@@ -42,27 +42,37 @@ def calc_soundness(vals: list):
 def evaluate_company_soundness(full_dataset: dict) -> int:
     company_soundness = 0
 
-    # 1.1 Get number of years of data available
+    # Data from dataset:
     number_of_years = min(ds.get_number_of_fiscal_years_available(full_dataset), 10)
+    eps = ds.get_eps(full_dataset, number_of_years)
+    fcf = ds.get_fcf(full_dataset, number_of_years)
+    debt_to_equity = ds.get_debt_to_equity_ratio(full_dataset, 1)
+    current_ratio = ds.get_current_ratio(full_dataset, 1)
+    equity = ds.get_equity(full_dataset, number_of_years)
+
+    if number_of_years == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+            eps == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+            fcf == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+            debt_to_equity == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+            current_ratio == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+            equity == ds.DATA_IS_NOT_PRESENT_IN_DATASET:
+        return -1
+
+    # 1.1 Number of years of data available
     company_soundness += calc_soundness_from_num_fiscal_years(number_of_years)
 
     # 1.2 Profitable every year terms of EPS and FCF
     # 1.3 EPS and FCF are growing over time
-    eps = ds.get_eps(full_dataset, number_of_years)
-    fcf = ds.get_fcf(full_dataset, number_of_years)
     company_soundness += calc_soundness(eps)
     company_soundness += calc_soundness(fcf)
 
     # 2.1 Debt-to-Equity ratio < 1.0 (Pref < 0.5)
-    debt_to_equity = ds.get_debt_to_equity_ratio(full_dataset, 1)[0]
-    company_soundness += calc_soundness_from_debt_to_equity(debt_to_equity)
+    company_soundness += calc_soundness_from_debt_to_equity(debt_to_equity[0])
 
     # 2.2 Current Ratio > 1.0 (Pref > 1.5)
-    current_ratio = ds.get_current_ratio(full_dataset, 1)[0]
-    company_soundness += calc_soundness_from_current_ratio(current_ratio)
+    company_soundness += calc_soundness_from_current_ratio(current_ratio[0])
 
     # 3 Equity is growing over time
-    equity = ds.get_equity(full_dataset, number_of_years)
     company_soundness += calc_soundness_from_equity(equity)
 
     return company_soundness
