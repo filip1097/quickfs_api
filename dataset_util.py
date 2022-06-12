@@ -3,6 +3,7 @@ import logging
 
 
 DATA_IS_NOT_PRESENT_IN_DATASET = ['Data is not present in dataset']
+NOT_AVAILABLE = 'N/A'
 
 
 def get_current_ratio(dataset: dict, n_years: int) -> list:
@@ -79,12 +80,18 @@ def get_fcf(dataset: dict, n_years: int) -> list:
     return fcf
 
 
+def get_fiscal_years(dataset: dict) -> list:
+    fiscal_years = get_annual_financial_data(dataset, 'fiscal_year_number')
+    if fiscal_years == DATA_IS_NOT_PRESENT_IN_DATASET:
+        return DATA_IS_NOT_PRESENT_IN_DATASET
+
+    return fiscal_years
+
+
 def get_latest_fiscal_year_string(dataset: dict) -> str:
-    # Maybe needs to be checked for DATA_IS_NOT_PRESENT_IN_DATASET
-    latest_fiscal_year = get_annual_financial_data(dataset, 'fiscal_year_number', 1)[0]
+    fiscal_years = get_annual_financial_data(dataset, 'fiscal_year_number', 1)
+    if fiscal_years == DATA_IS_NOT_PRESENT_IN_DATASET:
+        return NOT_AVAILABLE
+
+    latest_fiscal_year = fiscal_years[0]
     return f"{latest_fiscal_year}-01-01"
-
-
-def get_number_of_fiscal_years_available(dataset: dict) -> int:
-    # Maybe needs to be checked for DATA_IS_NOT_PRESENT_IN_DATASET
-    return len(get_annual_financial_data(dataset, 'fiscal_year_number'))

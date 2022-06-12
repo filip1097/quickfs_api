@@ -42,16 +42,18 @@ def calc_soundness(vals: list):
 def evaluate_company_soundness(full_dataset: dict) -> int:
     company_soundness = 0
 
-    # Data from dataset:
-    number_of_years = min(ds.get_number_of_fiscal_years_available(full_dataset), 10)
+    fiscal_years = ds.get_fiscal_years(full_dataset)
+    if fiscal_years == ds.DATA_IS_NOT_PRESENT_IN_DATASET:
+        return -1
+
+    number_of_years = min(len(fiscal_years), 10)
     eps = ds.get_eps(full_dataset, number_of_years)
     fcf = ds.get_fcf(full_dataset, number_of_years)
     debt_to_equity = ds.get_debt_to_equity_ratio(full_dataset, 1)
     current_ratio = ds.get_current_ratio(full_dataset, 1)
     equity = ds.get_equity(full_dataset, number_of_years)
 
-    if number_of_years == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
-            eps == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
+    if eps == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
             fcf == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
             debt_to_equity == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
             current_ratio == ds.DATA_IS_NOT_PRESENT_IN_DATASET or \
