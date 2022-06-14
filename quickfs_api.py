@@ -49,16 +49,39 @@ def get_all_supported_companies() -> list:
 def get_list_of_supported_companies(country: str, exchange: str) -> list:
     logging.info(f"Get list of supported companies, country code: {country}, exchange: {exchange}")
     url = f"{API_URL_BASE}/companies/{country}/{exchange}"
-    return requests.get(url, headers=gen_header()).json()['data']
+    response = requests.get(url, headers=gen_header())
+
+    if response.status_code == 200:
+        return response.json()['data']
+    else:
+        print_error_status_code(response)
+        return []
 
 
 def get_full_dataset_from_api(company_ticker: str) -> dict:
     logging.info(f"Get full dataset for {company_ticker}")
     url = f"{API_URL_BASE}/data/all-data/{company_ticker}"
-    return requests.get(url, headers=gen_header()).json()
+    response = requests.get(url, headers=gen_header())
+
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print_error_status_code(response)
+        return {}
 
 
 def get_remaining_api_quota() -> int:
     logging.info("Get remaining API quota.")
     url = f"{API_URL_BASE}/usage"
-    return requests.get(url, headers=gen_header()).json()['usage']['quota']['remaining']
+    response = requests.get(url, headers=gen_header())
+
+    if response.status_code == 200:
+        return response.json()['usage']['quota']['remaining']
+    else:
+        print_error_status_code(response)
+        return -1
+
+
+def print_error_status_code(response):
+    r_json = response.json()
+    logging.error(f"Status code: <{r_json['status']}> | {r_json['error']} | {r_json['description']}")
