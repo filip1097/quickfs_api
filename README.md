@@ -4,7 +4,6 @@ A project that utilizes the QuickFS API to request financial data and does analy
 
 ## TODO
 
-* Check dates in SQL. Do they have to be YYYY-MM-DD format?
 * Add tests for soundness calculation
 * Do not scrape companies with -1 score
 * Do not scrape companies with really old latest fiscal year
