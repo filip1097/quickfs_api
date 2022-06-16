@@ -53,10 +53,14 @@ def get_best_stock_ticker_to_request():
     thirty_days_ago = (date.today() - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
     current_year = int(date.today().strftime("%Y"))
     latest_expected_fiscal_year = f"{current_year-1}-01-01"
+    two_fiscal_years_ago = f"{current_year-2}-01-01"
 
     select_command = "SELECT * FROM company_list " \
                      f"WHERE last_api_get NOT BETWEEN \'{thirty_days_ago}\' AND \'{current_date}\' "\
-                     f"AND latest_fiscal_year != \'{latest_expected_fiscal_year}\'" \
+                     f"AND latest_fiscal_year != \'{latest_expected_fiscal_year}\' " \
+                     f"AND latest_fiscal_year >= \'{two_fiscal_years_ago}\' " \
+                     f"AND latest_fiscal_year >= \'{'N/A'}\' " \
+                     "AND soundness_scrore > 0 " \
                      "ORDER BY soundness_scrore DESC;"
     cursor.execute(select_command)
     company_rows = cursor.fetchall()
