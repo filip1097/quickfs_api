@@ -17,7 +17,7 @@ def create_company_list_db(cursor):
         company_ticker VARCHAR(20) PRIMARY KEY,
         last_api_get DATE,
         latest_fiscal_year DATE,
-        soundness_scrore INTEGER);"""
+        soundness_score INTEGER);"""
     cursor.execute(company_list_command)
 
 
@@ -60,8 +60,8 @@ def get_best_stock_ticker_to_request():
                      f"AND latest_fiscal_year != \'{latest_expected_fiscal_year}\' " \
                      f"AND latest_fiscal_year >= \'{two_fiscal_years_ago}\' " \
                      f"AND latest_fiscal_year >= \'{'N/A'}\' " \
-                     "AND soundness_scrore > 0 " \
-                     "ORDER BY soundness_scrore DESC;"
+                     "AND soundness_score > 0 " \
+                     "ORDER BY soundness_score DESC;"
     cursor.execute(select_command)
     company_rows = cursor.fetchall()
 
@@ -106,6 +106,17 @@ def get_json_file_name(stock_ticker: str):
     # ':' is not allowed in file names
     stock_ticker_without_colon = stock_ticker.replace(':', '_')
     return f"{stock_ticker_without_colon}.json"
+
+
+def rename_column_name(current_column_name, new_column_name):
+    connection = sqlite3.connect("quickfs_api.db")
+    cursor = connection.cursor()
+
+    rename_command = f"""ALTER TABLE company_list RENAME COLUMN {current_column_name} TO {new_column_name};"""
+    cursor.execute(rename_command)
+
+    connection.commit()
+    connection.close()
 
 
 def store_full_dataset_as_json(stock_ticker: str, data: dict):

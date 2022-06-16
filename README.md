@@ -4,5 +4,4 @@ A project that utilizes the QuickFS API to request financial data and does analy
 
 ## TODO
 
-* Fix spelling of column 'soundness_scrore'
 * Setup up on raspberry pi
