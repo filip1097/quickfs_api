@@ -70,4 +70,4 @@ if __name__ == '__main__':
     # Available modes:
     # * API
     # * REEVALUATE
-    main(mode='REEVALUATE')
+    main(mode='API')

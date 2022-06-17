@@ -1,0 +1,2105 @@
+{
+  "data": {
+    "template_type": "normal",
+    "v": 20200605,
+    "qfs_symbol_v2": "PSFT:US",
+    "template_version": 7,
+    "company_type": "normal",
+    "exchange": "OTC",
+    "financials": {
+      "quarterly": {
+        "period_end_date": [
+          "2008-03",
+          "2008-06",
+          "2008-09",
+          "2008-12"
+        ],
+        "revenue": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cogs": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "gross_profit": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sga": [
+          9000,
+          70000,
+          41000,
+          111000
+        ],
+        "rnd": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "special_charges": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_opex": [
+          0,
+          0,
+          1000,
+          3000
+        ],
+        "total_opex": [
+          9000,
+          70000,
+          42000,
+          114000
+        ],
+        "operating_income": [
+          -9000,
+          -70000,
+          -42000,
+          -114000
+        ],
+        "interest_income": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "interest_expense": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_interest_income_normal": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_nonoperating_income": [
+          9000,
+          70000,
+          42000,
+          114000
+        ],
+        "pretax_income": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "income_tax": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income_continuing": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income_discontinued": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "income_allocated_to_minority_interest": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_income_statement_items": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income": [
+          -9000,
+          -70000,
+          -42000,
+          -114000
+        ],
+        "preferred_dividends": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income_available_to_shareholders": [
+          -9000,
+          -70000,
+          -42000,
+          -114000
+        ],
+        "eps_basic": [
+          0,
+          0,
+          -0.01,
+          0
+        ],
+        "eps_diluted": [
+          0,
+          0,
+          -0.01,
+          0
+        ],
+        "shares_basic": [
+          23996000,
+          14150000,
+          4743000,
+          14150000
+        ],
+        "shares_diluted": [
+          23996000,
+          14150000,
+          4743000,
+          14150000
+        ],
+        "da_income_statement_supplemental": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_and_equiv": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "st_investments": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "receivables": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "inventories": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_current_assets": [
+          0,
+          7000,
+          15000,
+          15000
+        ],
+        "total_current_assets": [
+          0,
+          7000,
+          15000,
+          15000
+        ],
+        "equity_and_other_investments": [
+          0,
+          0,
+          0,
+          1367000
+        ],
+        "ppe_gross": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "accumulated_depreciation": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ppe_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "intangible_assets": [
+          11000,
+          11000,
+          10000,
+          10000
+        ],
+        "goodwill": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_lt_assets": [
+          0,
+          1349000,
+          1318000,
+          1000.0000000001
+        ],
+        "total_assets": [
+          11000,
+          1367000,
+          1343000,
+          1393000
+        ],
+        "accounts_payable": [
+          1000,
+          0,
+          0,
+          94000
+        ],
+        "tax_payable": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_accrued_liabilities": [
+          9000,
+          36000,
+          44000,
+          67000
+        ],
+        "st_debt": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_capital_leases": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_deferred_revenue": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_deferred_tax_liability": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_current_liabilities": [
+          0,
+          38000,
+          35000,
+          78000
+        ],
+        "total_current_liabilities": [
+          10000,
+          74000,
+          79000,
+          239000
+        ],
+        "lt_debt": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "noncurrent_capital_leases": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pension_liabilities": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "noncurrent_deferred_revenue": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_lt_liabilities": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_liabilities": [
+          10000,
+          74000,
+          79000,
+          239000
+        ],
+        "common_stock": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "preferred_stock": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "retained_earnings": [
+          -56000,
+          -124000,
+          -166000,
+          -280000
+        ],
+        "aoci": [
+          0,
+          0,
+          12000,
+          0
+        ],
+        "apic": [
+          57000,
+          1417000,
+          1417000,
+          1417000
+        ],
+        "treasury_stock": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "minority_interest_liability": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "other_equity": [
+          0,
+          0,
+          999.99999999989,
+          17000
+        ],
+        "total_equity": [
+          1000,
+          1293000,
+          1264000,
+          1154000
+        ],
+        "total_liabilities_and_equity": [
+          11000,
+          1367000,
+          1343000,
+          1393000
+        ],
+        "total_noncurrent_assets": [
+          11000,
+          1360000,
+          1328000,
+          1378000
+        ],
+        "total_noncurrent_liabilities": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_net_income": [
+          -9000,
+          -70000,
+          -42000,
+          -114000
+        ],
+        "cfo_da": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_receivables": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_inventory": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_prepaid_expenses": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_other_working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_change_in_working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_deferred_tax": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_stock_comp": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfo_other_noncash_items": [
+          3000,
+          62000,
+          -19000,
+          109000
+        ],
+        "cf_cfo": [
+          -6000,
+          -8000,
+          -61000,
+          -5000
+        ],
+        "cfi_ppe_purchases": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_ppe_sales": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_ppe_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_acquisitions": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_divestitures": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_acquisitions_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_investment_purchases": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_investment_sales": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_investment_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_intangibles_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cfi_other": [
+          0,
+          -1317000,
+          0,
+          0
+        ],
+        "cf_cfi": [
+          0,
+          -1317000,
+          0,
+          0
+        ],
+        "cff_common_stock_issued": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_common_stock_repurchased": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_common_stock_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_pfd_net": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_debt_net": [
+          2000,
+          0,
+          28000,
+          -19000
+        ],
+        "cff_dividend_paid": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_other": [
+          0,
+          1328000,
+          43000,
+          74000
+        ],
+        "cf_cff": [
+          2000,
+          1328000,
+          71000,
+          55000
+        ],
+        "cf_forex": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cf_net_change_in_cash": [
+          -4000,
+          3000,
+          10000,
+          50000
+        ],
+        "capex": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_pfd_issued": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_pfd_repurchased": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cff_debt_issued": [
+          2000,
+          0,
+          28000,
+          -19000
+        ],
+        "cff_debt_repaid": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ebitda": [
+          -9000,
+          -70000,
+          -42000,
+          -114000
+        ],
+        "fcf": [
+          -6000,
+          -8000,
+          -61000,
+          -5000
+        ],
+        "income_tax_rate": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nopat": [
+          -11250,
+          -87500,
+          -52500,
+          -142500
+        ],
+        "book_value": [
+          1000,
+          1293000,
+          1264000,
+          1154000
+        ],
+        "tangible_book_value": [
+          -10000,
+          1282000,
+          1254000,
+          1144000
+        ],
+        "roa": [
+          -3.8461,
+          -0.1567,
+          -0.0996,
+          -0.1717
+        ],
+        "roe": [
+          -11.1111,
+          -0.1669,
+          -0.1055,
+          -0.1943
+        ],
+        "roic": [
+          -11.1111,
+          -0.1669,
+          -0.1055,
+          -0.1943
+        ],
+        "roic_legacy": [
+          -16.6666,
+          -0.1669,
+          -0.1055,
+          -0.1943
+        ],
+        "roce": [
+          -11.1111,
+          -0.1669,
+          -0.1055,
+          -0.1943
+        ],
+        "rotce": [
+          7.1428,
+          -0.1698,
+          -0.1064,
+          -0.1959
+        ],
+        "gross_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ebitda_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "operating_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pretax_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fcf_margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "assets_to_equity": [
+          11,
+          1.0572,
+          1.0625,
+          1.2071
+        ],
+        "equity_to_assets": [
+          0.0909,
+          0.9458,
+          0.9411,
+          0.8284
+        ],
+        "debt_to_equity": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "debt_to_assets": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "revenue_per_share": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ebitda_per_share": [
+          -0.0003,
+          -0.0049,
+          -0.0088,
+          -0.008
+        ],
+        "operating_income_per_share": [
+          -0.0003,
+          -0.0049,
+          -0.0088,
+          -0.008
+        ],
+        "pretax_income_per_share": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fcf_per_share": [
+          -0.0002,
+          -0.0005,
+          -0.0128,
+          -0.0003
+        ],
+        "book_value_per_share": [
+          0,
+          0.0913,
+          0.2664,
+          0.0815
+        ],
+        "tangible_book_per_share": [
+          -0.0004,
+          0.0906,
+          0.2643,
+          0.0808
+        ],
+        "market_cap": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_earnings": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_book": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_tangible_book": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_sales": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_fcf": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "price_to_pretax_income": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_earnings": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_book": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_tangible_book": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_sales": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_fcf": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "enterprise_value_to_pretax_income": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "revenue_growth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "gross_profit_growth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ebitda_growth": [
+          -0.8,
+          -4.8333,
+          -1.8,
+          -7.1428
+        ],
+        "operating_income_growth": [
+          -0.8,
+          -4.8333,
+          -1.8,
+          -7.1428
+        ],
+        "pretax_income_growth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "net_income_growth": [
+          -0.8,
+          -4.8333,
+          -1.8,
+          -7.1428
+        ],
+        "eps_diluted_growth": [
+          0,
+          -4,
+          0,
+          0
+        ],
+        "shares_diluted_growth": [
+          0.7457,
+          -0.2138,
+          -0.927,
+          -0.3478
+        ],
+        "cash_and_equiv_growth": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "ppe_growth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_assets_growth": [
+          -0.5217,
+          43.0967,
+          78,
+          91.8666
+        ],
+        "total_equity_growth": [
+          1.2,
+          77.0588,
+          179.5714,
+          143.25
+        ],
+        "cfo_growth": [
+          -1.75,
+          0.4666,
+          -2.05,
+          0.5454
+        ],
+        "capex_growth": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "fcf_growth": [
+          -4,
+          0.5789,
+          -1.7727,
+          0.5454
+        ],
+        "dividends_per_share_growth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "shares_eop_growth": [
+          0.1059,
+          -0.4103,
+          0,
+          0
+        ],
+        "revenue_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "eps_diluted_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_assets_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_equity_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fcf_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "dividends_per_share_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cf_cfo_cagr_10": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_ratio": [
+          0,
+          0.0945,
+          0.1898,
+          0.0627
+        ],
+        "payout_ratio": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "peg_ratio": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "shares_eop_change": [
+          2299000,
+          -9846000,
+          0,
+          0
+        ],
+        "net_debt": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "shares_eop": [
+          23996000,
+          14150000,
+          14150000,
+          14150000
+        ],
+        "dividends": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "original_filing_date": [
+          "2008-05-15",
+          "2008-08-19",
+          "2008-11-28",
+          "2009-10-26"
+        ],
+        "period_end_price": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "preliminary": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "gross_margin_median": 0,
+        "pretax_margin_median": 0,
+        "operating_income_margin_median": 0,
+        "fcf_margin_median": 0,
+        "roa_median": -0.97478070175439,
+        "roe_median": -0.13625837852149,
+        "roic_median": -1.861893640831,
+        "assets_to_equity_median": 1.1348028596187,
+        "debt_to_assets_median": 0,
+        "debt_to_equity_median": 0,
+        "roic_5yr_avg": -3.3822673436887,
+        "fiscal_quarter_number": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "fiscal_quarter_key": [
+          "FY2008.FQ1",
+          "FY2008.FQ2",
+          "FY2008.FQ3",
+          "FY2008.FQ4"
+        ]
+      },
+      "annual": {
+        "period_end_date": [
+          "2007-12",
+          "2008-12"
+        ],
+        "revenue": [
+          0,
+          0
+        ],
+        "cogs": [
+          0,
+          0
+        ],
+        "gross_profit": [
+          0,
+          0
+        ],
+        "sga": [
+          46000,
+          229000
+        ],
+        "rnd": [
+          0,
+          0
+        ],
+        "special_charges": [
+          0,
+          0
+        ],
+        "other_opex": [
+          1000,
+          4000
+        ],
+        "total_opex": [
+          47000,
+          233000
+        ],
+        "operating_income": [
+          -47000,
+          -233000
+        ],
+        "interest_income": [
+          0,
+          0
+        ],
+        "interest_expense": [
+          0,
+          0
+        ],
+        "net_interest_income_normal": [
+          0,
+          0
+        ],
+        "other_nonoperating_income": [
+          47000,
+          233000
+        ],
+        "pretax_income": [
+          0,
+          0
+        ],
+        "income_tax": [
+          0,
+          0
+        ],
+        "net_income_continuing": [
+          0,
+          0
+        ],
+        "net_income_discontinued": [
+          0,
+          0
+        ],
+        "income_allocated_to_minority_interest": [
+          0,
+          0
+        ],
+        "other_income_statement_items": [
+          0,
+          0
+        ],
+        "net_income": [
+          -47000,
+          -233000
+        ],
+        "preferred_dividends": [
+          0,
+          0
+        ],
+        "net_income_available_to_shareholders": [
+          -47000,
+          -233000
+        ],
+        "eps_basic": [
+          0,
+          -0.01
+        ],
+        "eps_diluted": [
+          0,
+          -0.01
+        ],
+        "shares_basic": [
+          21697000,
+          16649000
+        ],
+        "shares_diluted": [
+          21697000,
+          16649000
+        ],
+        "da_income_statement_supplemental": [
+          1000,
+          1000
+        ],
+        "cash_and_equiv": [
+          3000,
+          0
+        ],
+        "st_investments": [
+          0,
+          0
+        ],
+        "receivables": [
+          0,
+          0
+        ],
+        "inventories": [
+          0,
+          0
+        ],
+        "other_current_assets": [
+          0,
+          15000
+        ],
+        "total_current_assets": [
+          3000,
+          15000
+        ],
+        "equity_and_other_investments": [
+          0,
+          1367000
+        ],
+        "ppe_gross": [
+          0,
+          0
+        ],
+        "accumulated_depreciation": [
+          0,
+          0
+        ],
+        "ppe_net": [
+          0,
+          0
+        ],
+        "intangible_assets": [
+          12000,
+          10000
+        ],
+        "goodwill": [
+          0,
+          0
+        ],
+        "other_lt_assets": [
+          0,
+          1000.0000000001
+        ],
+        "total_assets": [
+          15000,
+          1393000
+        ],
+        "accounts_payable": [
+          0,
+          94000
+        ],
+        "tax_payable": [
+          0,
+          0
+        ],
+        "current_accrued_liabilities": [
+          7000,
+          67000
+        ],
+        "st_debt": [
+          0,
+          0
+        ],
+        "current_capital_leases": [
+          0,
+          0
+        ],
+        "current_deferred_revenue": [
+          0,
+          0
+        ],
+        "current_deferred_tax_liability": [
+          0,
+          0
+        ],
+        "other_current_liabilities": [
+          0,
+          78000
+        ],
+        "total_current_liabilities": [
+          7000,
+          239000
+        ],
+        "lt_debt": [
+          0,
+          0
+        ],
+        "noncurrent_capital_leases": [
+          0,
+          0
+        ],
+        "pension_liabilities": [
+          0,
+          0
+        ],
+        "noncurrent_deferred_revenue": [
+          0,
+          0
+        ],
+        "other_lt_liabilities": [
+          0,
+          0
+        ],
+        "total_liabilities": [
+          7000,
+          239000
+        ],
+        "common_stock": [
+          0,
+          0
+        ],
+        "preferred_stock": [
+          0,
+          0
+        ],
+        "retained_earnings": [
+          -47000,
+          -280000
+        ],
+        "aoci": [
+          0,
+          0
+        ],
+        "apic": [
+          53000,
+          1417000
+        ],
+        "treasury_stock": [
+          0,
+          0
+        ],
+        "minority_interest_liability": [
+          0,
+          0
+        ],
+        "other_equity": [
+          2000,
+          17000
+        ],
+        "total_equity": [
+          8000,
+          1154000
+        ],
+        "total_liabilities_and_equity": [
+          15000,
+          1393000
+        ],
+        "total_noncurrent_assets": [
+          12000,
+          1378000
+        ],
+        "total_noncurrent_liabilities": [
+          0,
+          0
+        ],
+        "cfo_net_income": [
+          -47000,
+          -233000
+        ],
+        "cfo_da": [
+          1000,
+          1000
+        ],
+        "cfo_receivables": [
+          0,
+          0
+        ],
+        "cfo_inventory": [
+          0,
+          0
+        ],
+        "cfo_prepaid_expenses": [
+          0,
+          0
+        ],
+        "cfo_other_working_capital": [
+          0,
+          0
+        ],
+        "cfo_change_in_working_capital": [
+          0,
+          0
+        ],
+        "cfo_deferred_tax": [
+          0,
+          0
+        ],
+        "cfo_stock_comp": [
+          0,
+          0
+        ],
+        "cfo_other_noncash_items": [
+          7000,
+          152000
+        ],
+        "cf_cfo": [
+          -39000,
+          -80000
+        ],
+        "cfi_ppe_purchases": [
+          -13000,
+          0
+        ],
+        "cfi_ppe_sales": [
+          0,
+          0
+        ],
+        "cfi_ppe_net": [
+          -13000,
+          0
+        ],
+        "cfi_acquisitions": [
+          0,
+          0
+        ],
+        "cfi_divestitures": [
+          0,
+          0
+        ],
+        "cfi_acquisitions_net": [
+          0,
+          0
+        ],
+        "cfi_investment_purchases": [
+          0,
+          -1367000
+        ],
+        "cfi_investment_sales": [
+          0,
+          0
+        ],
+        "cfi_investment_net": [
+          0,
+          -1367000
+        ],
+        "cfi_intangibles_net": [
+          0,
+          0
+        ],
+        "cfi_other": [
+          0,
+          0
+        ],
+        "cf_cfi": [
+          -13000,
+          -1367000
+        ],
+        "cff_common_stock_issued": [
+          61000,
+          0
+        ],
+        "cff_common_stock_repurchased": [
+          0,
+          0
+        ],
+        "cff_common_stock_net": [
+          61000,
+          0
+        ],
+        "cff_pfd_net": [
+          0,
+          0
+        ],
+        "cff_debt_net": [
+          15000,
+          12000
+        ],
+        "cff_dividend_paid": [
+          0,
+          0
+        ],
+        "cff_other": [
+          -22000,
+          1444000
+        ],
+        "cf_cff": [
+          54000,
+          1456000
+        ],
+        "cf_forex": [
+          0,
+          0
+        ],
+        "cf_net_change_in_cash": [
+          2000,
+          9000
+        ],
+        "capex": [
+          -13000,
+          0
+        ],
+        "cff_pfd_issued": [
+          0,
+          0
+        ],
+        "cff_pfd_repurchased": [
+          0,
+          0
+        ],
+        "cff_debt_issued": [
+          15000,
+          12000
+        ],
+        "cff_debt_repaid": [
+          0,
+          0
+        ],
+        "ebitda": [
+          -46000,
+          -232000
+        ],
+        "fcf": [
+          -52000,
+          -80000
+        ],
+        "income_tax_rate": [
+          0,
+          0
+        ],
+        "nopat": [
+          -58750,
+          -291250
+        ],
+        "book_value": [
+          8000,
+          1154000
+        ],
+        "tangible_book_value": [
+          -4000,
+          1144000
+        ],
+        "roa": [
+          0,
+          -0.3309
+        ],
+        "roe": [
+          0,
+          -0.401
+        ],
+        "roic": [
+          0,
+          -0.401
+        ],
+        "roic_legacy": [
+          0,
+          -0.402
+        ],
+        "roce": [
+          0,
+          -0.401
+        ],
+        "rotce": [
+          0,
+          -0.4087
+        ],
+        "gross_margin": [
+          0,
+          0
+        ],
+        "ebitda_margin": [
+          0,
+          0
+        ],
+        "operating_margin": [
+          0,
+          0
+        ],
+        "pretax_margin": [
+          0,
+          0
+        ],
+        "net_income_margin": [
+          0,
+          0
+        ],
+        "fcf_margin": [
+          0,
+          0
+        ],
+        "assets_to_equity": [
+          1.875,
+          1.2071
+        ],
+        "equity_to_assets": [
+          0.5333,
+          0.8284
+        ],
+        "debt_to_equity": [
+          0,
+          0
+        ],
+        "debt_to_assets": [
+          0,
+          0
+        ],
+        "revenue_per_share": [
+          0,
+          0
+        ],
+        "ebitda_per_share": [
+          -0.0021,
+          -0.0139
+        ],
+        "operating_income_per_share": [
+          -0.0021,
+          -0.0139
+        ],
+        "pretax_income_per_share": [
+          0,
+          0
+        ],
+        "fcf_per_share": [
+          -0.0023,
+          -0.0048
+        ],
+        "book_value_per_share": [
+          0.0003,
+          0.0693
+        ],
+        "tangible_book_per_share": [
+          -0.0001,
+          0.0687
+        ],
+        "market_cap": [
+          0,
+          0
+        ],
+        "enterprise_value": [
+          -3000,
+          0
+        ],
+        "price_to_earnings": [
+          0,
+          0
+        ],
+        "price_to_book": [
+          0,
+          0
+        ],
+        "price_to_tangible_book": [
+          0,
+          0
+        ],
+        "price_to_sales": [
+          0,
+          0
+        ],
+        "price_to_fcf": [
+          0,
+          0
+        ],
+        "price_to_pretax_income": [
+          0,
+          0
+        ],
+        "enterprise_value_to_earnings": [
+          0.0638,
+          0
+        ],
+        "enterprise_value_to_book": [
+          -0.375,
+          0
+        ],
+        "enterprise_value_to_tangible_book": [
+          0.75,
+          0
+        ],
+        "enterprise_value_to_sales": [
+          0,
+          0
+        ],
+        "enterprise_value_to_fcf": [
+          0.0576,
+          0
+        ],
+        "enterprise_value_to_pretax_income": [
+          0,
+          0
+        ],
+        "revenue_growth": [
+          0,
+          0
+        ],
+        "gross_profit_growth": [
+          0,
+          0
+        ],
+        "ebitda_growth": [
+          0,
+          -4.0434
+        ],
+        "operating_income_growth": [
+          0,
+          -3.9574
+        ],
+        "pretax_income_growth": [
+          0,
+          0
+        ],
+        "net_income_growth": [
+          0,
+          -3.9574
+        ],
+        "eps_diluted_growth": [
+          0,
+          -5.5
+        ],
+        "shares_diluted_growth": [
+          0,
+          -0.2326
+        ],
+        "cash_and_equiv_growth": [
+          0,
+          -1
+        ],
+        "ppe_growth": [
+          0,
+          0
+        ],
+        "total_assets_growth": [
+          0,
+          91.8666
+        ],
+        "total_equity_growth": [
+          0,
+          143.25
+        ],
+        "cfo_growth": [
+          0,
+          -1.0512
+        ],
+        "capex_growth": [
+          0,
+          1
+        ],
+        "fcf_growth": [
+          0,
+          -0.5384
+        ],
+        "dividends_per_share_growth": [
+          0,
+          0
+        ],
+        "shares_eop_growth": [
+          0,
+          -0.3478
+        ],
+        "revenue_cagr_10": [
+          0,
+          0
+        ],
+        "eps_diluted_cagr_10": [
+          0,
+          0
+        ],
+        "total_assets_cagr_10": [
+          0,
+          0
+        ],
+        "total_equity_cagr_10": [
+          0,
+          0
+        ],
+        "fcf_cagr_10": [
+          0,
+          0
+        ],
+        "dividends_per_share_cagr_10": [
+          0,
+          0
+        ],
+        "cf_cfo_cagr_10": [
+          0,
+          0
+        ],
+        "current_ratio": [
+          0.4285,
+          0.0627
+        ],
+        "payout_ratio": [
+          0,
+          0
+        ],
+        "peg_ratio": [
+          0,
+          0
+        ],
+        "shares_eop_change": [
+          0,
+          -7547000
+        ],
+        "net_debt": [
+          -3000,
+          0
+        ],
+        "shares_eop": [
+          21697000,
+          14150000
+        ],
+        "dividends": [
+          0,
+          0
+        ],
+        "original_filing_date": [
+          "2008-02-19",
+          "2009-10-26"
+        ],
+        "period_end_price": [
+          0,
+          0
+        ],
+        "preliminary": [
+          0,
+          0
+        ],
+        "gross_margin_median": 0,
+        "pretax_margin_median": 0,
+        "operating_income_margin_median": 0,
+        "fcf_margin_median": 0,
+        "roa_median": -0.16548295454545,
+        "roe_median": -0.20051635111876,
+        "roic_median": -0.20051635111876,
+        "assets_to_equity_median": 1.5410528596187,
+        "debt_to_assets_median": 0,
+        "debt_to_equity_median": 0,
+        "roic_5yr_avg": -0.40103270223752,
+        "fiscal_year_number": [
+          2007,
+          2008
+        ],
+        "fiscal_year_key": [
+          "FY2007",
+          "FY2008"
+        ]
+      },
+      "ttm": {
+        "period_end_date": "TTM",
+        "revenue": 0,
+        "cogs": 0,
+        "gross_profit": 0,
+        "sga": 229000,
+        "rnd": 0,
+        "special_charges": 0,
+        "other_opex": 4000,
+        "total_opex": 233000,
+        "operating_income": -233000,
+        "interest_income": 0,
+        "interest_expense": 0,
+        "net_interest_income_normal": 0,
+        "other_nonoperating_income": 233000,
+        "pretax_income": 0,
+        "income_tax": 0,
+        "net_income_continuing": 0,
+        "net_income_discontinued": 0,
+        "income_allocated_to_minority_interest": 0,
+        "other_income_statement_items": 0,
+        "net_income": -233000,
+        "preferred_dividends": 0,
+        "net_income_available_to_shareholders": -233000,
+        "eps_basic": -0.01,
+        "eps_diluted": -0.01,
+        "shares_basic": 16649000,
+        "shares_diluted": 16649000,
+        "da_income_statement_supplemental": 1000,
+        "cash_and_equiv": 0,
+        "st_investments": 0,
+        "receivables": 0,
+        "inventories": 0,
+        "other_current_assets": 15000,
+        "total_current_assets": 15000,
+        "equity_and_other_investments": 1367000,
+        "ppe_gross": 0,
+        "accumulated_depreciation": 0,
+        "ppe_net": 0,
+        "intangible_assets": 10000,
+        "goodwill": 0,
+        "other_lt_assets": 1000.0000000001,
+        "total_assets": 1393000,
+        "accounts_payable": 94000,
+        "tax_payable": 0,
+        "current_accrued_liabilities": 67000,
+        "st_debt": 0,
+        "current_capital_leases": 0,
+        "current_deferred_revenue": 0,
+        "current_deferred_tax_liability": 0,
+        "other_current_liabilities": 78000,
+        "total_current_liabilities": 239000,
+        "lt_debt": 0,
+        "noncurrent_capital_leases": 0,
+        "pension_liabilities": 0,
+        "noncurrent_deferred_revenue": 0,
+        "other_lt_liabilities": 0,
+        "total_liabilities": 239000,
+        "common_stock": 0,
+        "preferred_stock": 0,
+        "retained_earnings": -280000,
+        "aoci": 0,
+        "apic": 1417000,
+        "treasury_stock": 0,
+        "minority_interest_liability": 0,
+        "other_equity": 17000,
+        "total_equity": 1154000,
+        "total_liabilities_and_equity": 1393000,
+        "total_noncurrent_assets": 1378000,
+        "total_noncurrent_liabilities": 0,
+        "cfo_net_income": -233000,
+        "cfo_da": 1000,
+        "cfo_receivables": 0,
+        "cfo_inventory": 0,
+        "cfo_prepaid_expenses": 0,
+        "cfo_other_working_capital": 0,
+        "cfo_change_in_working_capital": 0,
+        "cfo_deferred_tax": 0,
+        "cfo_stock_comp": 0,
+        "cfo_other_noncash_items": 152000,
+        "cf_cfo": -80000,
+        "cfi_ppe_purchases": 0,
+        "cfi_ppe_sales": 0,
+        "cfi_ppe_net": 0,
+        "cfi_acquisitions": 0,
+        "cfi_divestitures": 0,
+        "cfi_acquisitions_net": 0,
+        "cfi_investment_purchases": -1367000,
+        "cfi_investment_sales": 0,
+        "cfi_investment_net": -1367000,
+        "cfi_intangibles_net": 0,
+        "cfi_other": 0,
+        "cf_cfi": -1367000,
+        "cff_common_stock_issued": 0,
+        "cff_common_stock_repurchased": 0,
+        "cff_common_stock_net": 0,
+        "cff_pfd_net": 0,
+        "cff_debt_net": 12000,
+        "cff_dividend_paid": 0,
+        "cff_other": 1444000,
+        "cf_cff": 1456000,
+        "cf_forex": 0,
+        "cf_net_change_in_cash": 9000,
+        "capex": 0,
+        "cff_pfd_issued": 0,
+        "cff_pfd_repurchased": 0,
+        "cff_debt_issued": 12000,
+        "cff_debt_repaid": 0,
+        "ebitda": -232000,
+        "fcf": -80000,
+        "income_tax_rate": 0,
+        "nopat": -291250,
+        "book_value": 1154000,
+        "tangible_book_value": 1144000,
+        "roa": -0.3309,
+        "roe": -0.401,
+        "roic": -0.401,
+        "roic_legacy": -0.402,
+        "roce": -0.401,
+        "rotce": -0.4087,
+        "gross_margin": 0,
+        "ebitda_margin": 0,
+        "operating_margin": 0,
+        "pretax_margin": 0,
+        "net_income_margin": 0,
+        "fcf_margin": 0,
+        "assets_to_equity": 1.2071,
+        "equity_to_assets": 0.8284,
+        "debt_to_equity": 0,
+        "debt_to_assets": 0,
+        "revenue_per_share": 0,
+        "ebitda_per_share": -0.0139,
+        "operating_income_per_share": -0.0139,
+        "pretax_income_per_share": 0,
+        "fcf_per_share": -0.0048,
+        "book_value_per_share": 0.0693,
+        "tangible_book_per_share": 0.0687,
+        "market_cap": 0,
+        "enterprise_value": 0,
+        "price_to_earnings": 0,
+        "price_to_book": 0,
+        "price_to_tangible_book": 0,
+        "price_to_sales": 0,
+        "price_to_fcf": 0,
+        "price_to_pretax_income": 0,
+        "enterprise_value_to_earnings": 0,
+        "enterprise_value_to_book": 0,
+        "enterprise_value_to_tangible_book": 0,
+        "enterprise_value_to_sales": 0,
+        "enterprise_value_to_fcf": 0,
+        "enterprise_value_to_pretax_income": 0,
+        "revenue_growth": 0,
+        "gross_profit_growth": 0,
+        "ebitda_growth": -4.0434,
+        "operating_income_growth": -3.9574,
+        "pretax_income_growth": 0,
+        "net_income_growth": -3.9574,
+        "eps_diluted_growth": -5.5,
+        "shares_diluted_growth": -0.2326,
+        "cash_and_equiv_growth": -1,
+        "ppe_growth": 0,
+        "total_assets_growth": 91.8666,
+        "total_equity_growth": 143.25,
+        "cfo_growth": -1.0512,
+        "capex_growth": 1,
+        "fcf_growth": -0.5384,
+        "dividends_per_share_growth": 0,
+        "shares_eop_growth": -0.3478,
+        "revenue_cagr_10": 0,
+        "eps_diluted_cagr_10": 0,
+        "total_assets_cagr_10": 0,
+        "total_equity_cagr_10": 0,
+        "fcf_cagr_10": 0,
+        "dividends_per_share_cagr_10": 0,
+        "cf_cfo_cagr_10": 0,
+        "current_ratio": 0.0627,
+        "payout_ratio": 0,
+        "peg_ratio": 0,
+        "shares_eop_change": -7547000,
+        "net_debt": 0,
+        "shares_eop": 54440000,
+        "dividends": 0,
+        "original_filing_date": "2009-10-26",
+        "period_end_price": 0,
+        "preliminary": 0
+      }
+    },
+    "metadata": {
+      "sector": null,
+      "cusip": "712713106",
+      "CIK": "N/A",
+      "name": "Powersafe Technology Corp",
+      "exchange": "OTC",
+      "full_time_employees": "N/A",
+      "country": "US",
+      "symbol": "PSFT",
+      "company_type": "normal",
+      "qfs_symbol": "PSFT:US",
+      "subindustry": null,
+      "sic": "7372",
+      "currency": "USD",
+      "gics": "45103010",
+      "morningstar_sector": "Technology",
+      "morningstar_industry": "Semiconductors",
+      "ISIN": "US7127131065",
+      "industry": null,
+      "description": "Powersafe Technology Corp., through subsidiary, Amplification Technologies, Inc., develops and sells multichannel discrete amplification photon detector (DAPD) technology solution for low-level signal detection. The company's products include discrete amplification photon detectors, thermoelectrically cooled DAPD, near infrared discrete amplification photon detectors, near infrared DAPD thermoelectrically cooled, DAPD room temperature modules, DAPD stabilized temperature modules, DAPD device evaluation modules, and thermoelectrically cooled DAPD device evaluation modules. Its DAPD technology is used in PET scanners, medical imaging, fluorescence detection, high energy physics, spectroscopy, biological sensors, ladar and lidar, homeland security, confocal microscopy, and night vision applications. The company was founded in 2000 and is based in Brooklyn, New York."
+    }
+  }
+}
