@@ -6,3 +6,6 @@ API_KEY
 
 # Log
 quickfs_api.log
+
+# pycache
+__pycache__/*
