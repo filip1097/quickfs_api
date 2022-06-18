@@ -29,7 +29,7 @@ def can_get_full_dataset():
 
 def gen_header() -> dict:
     with open('API_KEY', 'r') as file:
-        api_key = file.read()
+        api_key = file.read().strip()
 
     header = {'x-qfs-api-key': api_key}
 
