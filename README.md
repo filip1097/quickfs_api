@@ -4,4 +4,4 @@ A project that utilizes the QuickFS API to request financial data and does analy
 
 ## TODO
 
-* Setup up on raspberry pi
+* Do valuation
