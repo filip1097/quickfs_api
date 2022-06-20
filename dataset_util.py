@@ -14,7 +14,10 @@ def get_current_ratio(dataset: dict, n_years: int) -> list:
 
     current_ratio = []
     for c_a, c_l in zip(current_assets, current_liabilities):
-        current_ratio.append(c_a / c_l)
+        if c_l == 0:
+            current_ratio.append(1.5)
+        else:
+            current_ratio.append(c_a / c_l)
 
     return current_ratio
 
