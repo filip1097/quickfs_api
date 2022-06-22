@@ -1,3 +1,5 @@
+import logging
+
 import dataset_util as ds
 
 
@@ -16,15 +18,6 @@ def calc_soundness_from_debt_to_equity(debt_to_equity: float):
         return 100 * (2 - debt_to_equity)
 
 
-def calc_soundness_from_equity(equity: list):
-    total_years = len(equity)
-    if total_years == 1:
-        return 0
-    else:
-        growing_years = len([1 for i in range(len(equity) - 1) if equity[i + 1] - equity[i] > 0])
-        return 100 * growing_years / (total_years - 1)
-
-
 def calc_soundness_from_num_fiscal_years(number_of_years: int):
     if number_of_years >= 10:
         return 100
@@ -32,22 +25,11 @@ def calc_soundness_from_num_fiscal_years(number_of_years: int):
         return 100 * number_of_years / 10
 
 
-def calc_soundness_from_eps_or_fcf(eps_or_fcf: list):
-    total_years = len(eps_or_fcf)
-    profitable_years = len([val for val in eps_or_fcf if val > 0])
-    if total_years == 1:
-        return 100 * profitable_years / total_years
-    else:
-        growing_years = len([1 for i in range(len(eps_or_fcf) - 1) if eps_or_fcf[i + 1] - eps_or_fcf[i] > 0])
-        return 100 * (profitable_years / total_years + growing_years / (total_years - 1))
-
-
 def evaluate_company_soundness(full_dataset: dict) -> int:
     """Calculates the 'soundness' of a company based on the provided data set.
 
     Maximum soundness is: 900
     """
-
     company_soundness = 0
 
     fiscal_years = ds.get_fiscal_years(full_dataset)
@@ -73,8 +55,9 @@ def evaluate_company_soundness(full_dataset: dict) -> int:
 
     # 1.2 Profitable every year terms of EPS and FCF
     # 1.3 EPS and FCF are growing over time
-    company_soundness += calc_soundness_from_eps_or_fcf(eps)
-    company_soundness += calc_soundness_from_eps_or_fcf(fcf)
+    company_soundness += get_soundness(eps, above_limit=0, growing=True)
+    company_soundness += get_soundness(fcf, above_limit=0, growing=True)
+    print(company_soundness)
 
     # 2.1 Debt-to-Equity ratio < 1.0 (Pref < 0.5)
     company_soundness += calc_soundness_from_debt_to_equity(debt_to_equity[0])
@@ -83,6 +66,27 @@ def evaluate_company_soundness(full_dataset: dict) -> int:
     company_soundness += calc_soundness_from_current_ratio(current_ratio[0])
 
     # 3 Equity is growing over time
-    company_soundness += calc_soundness_from_equity(equity)
+    company_soundness += get_soundness(fcf, growing=True)
 
     return round(company_soundness, 0)
+
+
+def get_soundness(values: list, above_limit=None, calc_distance=False, growing=False):
+    soundness = 0
+    num_years = len(values)
+
+    if above_limit is not None:
+        if calc_distance:
+            distances = []
+            for val in values:
+                if val <
+        else:
+            num_years_above_limit = len([val for val in values if val > 0])
+            soundness += 100 * num_years_above_limit / num_years
+
+
+    if growing and num_years > 1:
+        growing_years = len([1 for i in range(len(values) - 1) if values[i + 1] - values[i] > 0])
+        soundness += 100 * growing_years / (num_years - 1)
+
+    return soundness
